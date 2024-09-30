@@ -21,13 +21,13 @@ namespace RockPaperScissorsProject
             var table = new AsciiTableGenerator("Moves table");
 
             string[] newMoves = new string[moves.Length + 1];
-            newMoves[0] = "↓User/→PC";
+            newMoves[0] = "↓User/->PC";
             Array.Copy(moves, 0, newMoves, 1, moves.Length);
 
             table.SetCaptions(newMoves);
             
 
-            table.SetCaption(0,"↓User/→PC");
+            table.SetCaption(0,"↓User/->PC");
 
             foreach (var move in moves)
             {
